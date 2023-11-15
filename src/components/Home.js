@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Dashboard() {
+function Home() {
   return (
-    <div className='dashboard'>
+    <div className='home'>
         <div className='navbar'>
             <div className='navbar__title'>
                 <div className='navbar__title--text'>Crazy Tech</div>
@@ -48,4 +48,4 @@ function Dashboard() {
   )
 }
 
-export default Dashboard
+export default Home
