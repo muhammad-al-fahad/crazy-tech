@@ -219,3 +219,19 @@ body {
   top: 204px;
   left: 171px;
 }
+
+.customers {
+  width: 100%;
+  height: 100%;
+  padding-inline: 80px;
+}
+
+.customers__list {
+  padding: 60px;
+  min-height: 155px;
+  border-top: 1px solid #1B1E26;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}

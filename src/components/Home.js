@@ -44,6 +44,16 @@ function Home() {
             <div className='content__ellipse'><img src='/Ellipse.svg' alt='Ellipse look like D shape' width={101.21} height={93.04}/></div>
             <div className='content__layer'><img src='/Layer.svg' alt='Layers of code' width={86.19} height={82.51}/></div>
         </div>
+
+        <div className='customers'>
+            <div className='customers__list'>
+                <img src='/nokia.svg' alt='Nokia'  width={156} height={26}/>
+                <img src='/Group.svg' alt='Group On' width={160} height={29}/>
+                <img src='/honeywell.svg' alt='Honey Well' width={181.67} height={35}/>
+                <img src='/abb.svg' alt='ABB' width={86.67} height={35}/>
+                <img src='/barclays.svg' alt='Bar Clays' width={195} height={35}/>
+            </div>
+        </div>
     </div>
   )
 }
