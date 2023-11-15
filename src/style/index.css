@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Raleway&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  max-width: 100vw;
+  min-height: 100vh;
+  background: #121212;
+}
+
+.navbar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 26px 80px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 428px;
+}
+
+.navbar__title {
+  width: 142px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__title--text {
+  width: 142px;
+  height: 30px;
+  color: white;
+  font-size: 27.81px;
+  font-family: 'Raleway';
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.navbar__list--area {
+  align-self: stretch;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar__items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.navbar__link {
+  color: white;
+  font-size: 16px;
+  font-family: 'Manrope';
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.navbar__button {
+  width: 130px;
+  height: 48px;
+  padding-left: 16px;
+  background: #C0FF00;
+  border-radius: 16px;
+  border: 1px solid #C0FF00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar__button--title {
+  flex: 1 1 0;
+  text-align: center;
+  color: black;
+  font-size: 16px;
+  font-family: 'Manrope';
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 12px;
+  word-wrap: break-word;
+}
+
+.content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.content__list {
+  width: 100%;
+  height: 100%;
+  margin-inline: auto;
+  margin-top: 180px;
+  margin-bottom: 260px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 60px;
+}
+
+.content__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Manrope';
+  word-wrap: break-word;
+  gap: 40px;
+}
+
+.content__titles {
+  text-align: center;
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 80px;
+}
+
+.content__title-1 {
+  color: white;
+}
+
+.content__title-2 {
+  color: #C0FF00;
+}
+
+.content__description {
+  width: 792px;
+  text-align: center;
+  color: #A8AEBF;
+  font-size: 18px; 
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.content__button {
+  height: 56px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background: #C0FF00;
+  border-radius: 16px;
+  border: 1px solid #C0FF00;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.content__button--title {
+  text-align: center;
+  color: black;
+  font-size: 16px;
+  font-family: 'Manrope';
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 12px;
+  word-wrap: break-word;
+}
+
+.content__elements {
+  position: absolute;
+  top: 70.22px;
+  left: 64.74px
+}
+
+.content__tag {
+  position: absolute;
+  top: 265px;
+  right: 134px;
+  padding: 22px 23px;
+  opacity: 0.6;
+  background: #15181F;
+  border-radius: 100px;
+  overflow: hidden;
+  border: 4px solid white;
+}
+
+.content__bracket {
+  position: absolute;
+  top: 509px;
+  left: 131px;
+  padding: 16px 28px;
+  opacity: 0.4;
+  background: #1B1E26;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 4px solid white;
+}
+
+.content__frame {
+  position: absolute;
+  top: 510px;
+  right: 258px;
+}
+
+.content__ellipse {
+  position: absolute;
+  top: 69px;
+  right: 93.16px;
+}
+
+.content__layer {
+  position: absolute;
+  top: 204px;
+  left: 171px;
+}
