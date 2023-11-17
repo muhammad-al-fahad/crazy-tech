@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Raleway&display=swap');
+@import url('./_responsive.css');
 
 *,
 *::before,
@@ -8,11 +9,11 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  max-width: 100vw;
+  max-width: 100vw; 
   min-height: 100vh;
   background: #121212;
 }
@@ -22,25 +23,24 @@ body {
   width: 100%;
   height: 100%;
   padding: 26px 80px;
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 428px;
 }
 
 .navbar__title {
   width: 142px;
-  height: 30px;
-  display: inline-flex;
+  height: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .navbar__title--text {
   width: 142px;
-  height: 30px;
+  height: 100%;
   color: white;
-  font-size: 27.81px;
+  font-size: 27px;
   font-family: 'Raleway';
   font-weight: 500;
   word-wrap: break-word;
@@ -93,6 +93,50 @@ body {
   text-transform: uppercase;
   line-height: 12px;
   word-wrap: break-word;
+}
+
+.navbar__menu {
+  display: none;
+}
+
+.navbar__menu--btn.open {
+  transform: rotate(360deg);
+  background: transparent;
+}
+
+.navbar__menu--btn.open::before {
+  transform: rotate(45deg) translate(0px, 0px);
+}
+
+.navbar__menu--btn.open::after {
+  transform: rotate(-45deg) translate(12px, -13px);
+  width: 28px;
+}
+
+.navbar__list--area.open {
+  position: absolute;
+  background: #121212;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 80px;
+}
+
+.open .navbar__items {
+  flex-direction: column;
+}
+
+.open .navbar__items .navbar__link {
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .content {
@@ -228,10 +272,140 @@ body {
 
 .customers__list {
   padding: 60px;
-  min-height: 155px;
+  min-height: auto;
   border-top: 1px solid #1B1E26;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 80px;
+}
+
+.services {
+  width: 100%;
+  height: 100%;
+  padding: 60px 79px;
+  background: white;
+}
+
+.service__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+
+.service__title {
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Manrope';
+  font-weight: 700;
+  line-height: 40px;
+  word-wrap: break-word;
+}
+
+.service__list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.services__list--area {
+  width: 100%;
+  height: 100%;
+  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.service__card {
+  padding: 32px;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1.6px solid #F5F6FA;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.service__card--area {
+  width: 100%;
+  height: 100%;
+}
+
+.service__card--content {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.service__card--img {
+  width: 60px;
+  height: 100%;
+  padding: 10px;
+  background: #15181F;
+  border-radius: 8px;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service__card--info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+.service__card--info-title {
+  width: 100%;
+  color: black;
+  font-size: 24;
+  font-family: 'Manrope';
+  font-weight: 700;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.service__card--dsc {
+  width: 100%;
+  color: #767C8C;
+  font-size: 16px;
+  font-family: 'Manrope';
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.service__card--list {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.service__card--list-item {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
 }

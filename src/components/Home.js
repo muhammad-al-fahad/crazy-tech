@@ -1,6 +1,23 @@
-import React from 'react'
+import {useState} from 'react'
 
 function Home() {
+    const [showMenu, setShowMenu] = useState(false)
+
+    
+    function menuToggle() {
+        const menuBtn = document.querySelector('.navbar__menu--btn');
+        const navList = document.querySelector('.navbar__list--area');
+
+        if(!showMenu) {
+            menuBtn.classList.add('open');
+            navList.classList.add('open');
+            setShowMenu(true)
+        } else {
+            menuBtn.classList.remove('open');
+            navList.classList.remove('open');
+            setShowMenu(false)
+        }
+    }
   return (
     <div className='home'>
         <div className='navbar'>
@@ -19,6 +36,9 @@ function Home() {
                 <div className='navbar__button'>
                     <div className='navbar__button--title'>Join us</div>
                 </div>
+            </div>
+            <div className='navbar__menu' onClick={menuToggle}>
+                <span className='navbar__menu--btn'></span>
             </div>
         </div>
 
@@ -52,6 +72,276 @@ function Home() {
                 <img src='/honeywell.svg' alt='Honey Well' width={181.67} height={35}/>
                 <img src='/abb.svg' alt='ABB' width={86.67} height={35}/>
                 <img src='/barclays.svg' alt='Bar Clays' width={195} height={35}/>
+            </div>
+        </div>
+
+        <div className='services'>
+            <div className='service__items'>
+                <div className='service__title'>Services We Offer</div>
+                <div className='service__list'>
+                    <div className='services__list--area'>
+                        <div className='service__card'>
+                            <div className='service__card--area'>
+                                <div className='service__card--content'>
+                                    <div className='service__card--img'>
+                                       <img src='/developer_mode.svg' alt='Developer Mode' /> 
+                                    </div>
+
+                                    <div className='service__card--info'>
+                                        <div className='service__card--info-title'>Web App Development</div>
+                                        <div className='service__card--dsc'>We have dedicated full stack developers team for front-end and back-end development.</div>
+                                    </div>
+
+                                    <div className='service__card--list'>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>Custom Software Development</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>Web App Development</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' />  
+                                            <div className='service__card--list-title'>Mobile App Development</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>Application Re-Engineering</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' />  
+                                            <div className='service__card--list-title'>UI/UX Design</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>UI/UX Design</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='service__card--component'></div>
+                            </div>
+                        </div>
+
+                        <div className='service__card'>
+                            <div className='service__card--area'>
+                                <div className='service__card--content'>
+                                    <div className='service__card--img'>
+                                       <img src='/developer_mode.svg' alt='Developer Mode' /> 
+                                    </div>
+
+                                    <div className='service__card--info'>
+                                        <div className='service__card--info-title'>Web App Development</div>
+                                        <div className='service__card--dsc'>We have dedicated full stack developers team for front-end and back-end development.</div>
+                                    </div>
+
+                                    <div className='service__card--list'>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>Custom Software Development</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>Web App Development</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' />  
+                                            <div className='service__card--list-title'>Mobile App Development</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>Application Re-Engineering</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' />  
+                                            <div className='service__card--list-title'>UI/UX Design</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>UI/UX Design</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='service__card--component'></div>
+                            </div>
+                        </div>
+
+                        <div className='service__card'>
+                            <div className='service__card--area'>
+                                <div className='service__card--content'>
+                                    <div className='service__card--img'>
+                                       <img src='/developer_mode.svg' alt='Developer Mode' /> 
+                                    </div>
+
+                                    <div className='service__card--info'>
+                                        <div className='service__card--info-title'>Web App Development</div>
+                                        <div className='service__card--dsc'>We have dedicated full stack developers team for front-end and back-end development.</div>
+                                    </div>
+
+                                    <div className='service__card--list'>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>Custom Software Development</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>Web App Development</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' />  
+                                            <div className='service__card--list-title'>Mobile App Development</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>Application Re-Engineering</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' />  
+                                            <div className='service__card--list-title'>UI/UX Design</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>UI/UX Design</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='service__card--component'></div>
+                            </div>
+                        </div>
+
+                        <div className='service__card'>
+                            <div className='service__card--area'>
+                                <div className='service__card--content'>
+                                    <div className='service__card--img'>
+                                       <img src='/developer_mode.svg' alt='Developer Mode' /> 
+                                    </div>
+
+                                    <div className='service__card--info'>
+                                        <div className='service__card--info-title'>Web App Development</div>
+                                        <div className='service__card--dsc'>We have dedicated full stack developers team for front-end and back-end development.</div>
+                                    </div>
+
+                                    <div className='service__card--list'>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>Custom Software Development</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>Web App Development</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' />  
+                                            <div className='service__card--list-title'>Mobile App Development</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>Application Re-Engineering</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' />  
+                                            <div className='service__card--list-title'>UI/UX Design</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>UI/UX Design</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='service__card--component'></div>
+                            </div>
+                        </div>
+
+                        <div className='service__card'>
+                            <div className='service__card--area'>
+                                <div className='service__card--content'>
+                                    <div className='service__card--img'>
+                                       <img src='/developer_mode.svg' alt='Developer Mode' /> 
+                                    </div>
+
+                                    <div className='service__card--info'>
+                                        <div className='service__card--info-title'>Web App Development</div>
+                                        <div className='service__card--dsc'>We have dedicated full stack developers team for front-end and back-end development.</div>
+                                    </div>
+
+                                    <div className='service__card--list'>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>Custom Software Development</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>Web App Development</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' />  
+                                            <div className='service__card--list-title'>Mobile App Development</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>Application Re-Engineering</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' />  
+                                            <div className='service__card--list-title'>UI/UX Design</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>UI/UX Design</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='service__card--component'></div>
+                            </div>
+                        </div>
+
+                        <div className='service__card'>
+                            <div className='service__card--area'>
+                                <div className='service__card--content'>
+                                    <div className='service__card--img'>
+                                       <img src='/developer_mode.svg' alt='Developer Mode' /> 
+                                    </div>
+
+                                    <div className='service__card--info'>
+                                        <div className='service__card--info-title'>Web App Development</div>
+                                        <div className='service__card--dsc'>We have dedicated full stack developers team for front-end and back-end development.</div>
+                                    </div>
+
+                                    <div className='service__card--list'>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>Custom Software Development</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>Web App Development</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' />  
+                                            <div className='service__card--list-title'>Mobile App Development</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>Application Re-Engineering</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' />  
+                                            <div className='service__card--list-title'>UI/UX Design</div>
+                                        </div>
+                                        <div className='service__card--list-item'>
+                                            <img src='/check.svg' alt='Check' /> 
+                                            <div className='service__card--list-title'>UI/UX Design</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='service__card--component'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='button'>
+                    <div className='button__title'></div>
+                </div>
             </div>
         </div>
     </div>
