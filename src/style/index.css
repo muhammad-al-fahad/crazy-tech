@@ -10,9 +10,7 @@
 }
 
 html, body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   max-width: 100vw; 
   min-height: 100vh;
   background: #121212;
@@ -81,6 +79,11 @@ html, body {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  transition: background 0.25s ease-in-out;
+}
+
+.navbar__button:hover {
+  background: #b0ea00;
 }
 
 .navbar__button--title {
@@ -203,6 +206,11 @@ html, body {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  transition: background 0.25s ease-in-out;
+}
+
+.content__button:hover {
+  background: #b0ea00;
 }
 
 .content__button--title {
@@ -265,13 +273,14 @@ html, body {
 }
 
 .customers {
-  width: 100%;
+  min-width: 100vw;
   height: 100%;
   padding-inline: 80px;
 }
 
 .customers__list {
   padding: 60px;
+  min-width: 100%;
   min-height: auto;
   border-top: 1px solid #1B1E26;
   display: inline-flex;
@@ -335,6 +344,10 @@ html, body {
   gap: 10px;
 }
 
+.service__card:hover {
+  border-color: #C0FF00;
+}
+
 .service__card--area {
   width: 100%;
   height: 100%;
@@ -352,7 +365,7 @@ html, body {
 
 .service__card--img {
   width: 60px;
-  height: 100%;
+  height: 60px;
   padding: 10px;
   background: #15181F;
   border-radius: 8px;
@@ -393,7 +406,7 @@ html, body {
 
 .service__card--list {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: inline-flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -403,9 +416,38 @@ html, body {
 
 .service__card--list-item {
   width: 100%;
-  height: 100%;
+  height: 26px !important;
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
   gap: 16px;
+}
+
+.button {
+  width: auto;
+  height: 56px;
+  padding-inline: 24px;
+  background: #C0FF00;
+  border-radius: 16px;
+  border: 1px solid #C0FF00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.25s ease-in-out;
+}
+
+.button:hover {
+  background: #b0ea00;
+}
+
+.button__title {
+  text-align: center;
+  color: 'black';
+  font-size: 16px;
+  font-family: 'Manrope';
+  font-weight: 700;
+  text-transform: 'capitalize';
+  line-height: 12px;
+  word-wrap: 'break-word'
 }
